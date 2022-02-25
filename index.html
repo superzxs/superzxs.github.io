@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script src="js/jq.cs"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div class="v">
+        <video class="f" id="bgvid" playsinline="" autoplay muted loop="">
+            <source src="pic/thismp4.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="search">
+        <h1>Dream</h1><br><br><br>
+        <div class="searchAdd"><img src="Logo/Logo_Bing.png" alt=""></div>
+        <input class="divKuang" value="" placeholder="你倒是搜啊！！！" />
+        <button class="quary">| Query</button>
+        </input>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        $(".quary").click(() => {
+            let a = $(".divKuang").val();
+            window.open('https://cn.bing.com/search?q=' + a + '&form=QBLH&sp=-1&pq=a&sc=8-1&qs=n&sk=&cvid=5BA73039F9A442758CC47594DBEB49E4');
+        });
+        $(this).keydown(function (e) {
+            if (e.which == "13") {
+                let a = $(".divKuang").val();
+                window.open('https://cn.bing.com/search?q=' + a + '&form=QBLH&sp=-1&pq=a&sc=8-1&qs=n&sk=&cvid=5BA73039F9A442758CC47594DBEB49E4');
+            }
+        })
+    })
+
+</script>
