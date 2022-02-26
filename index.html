@@ -40,4 +40,14 @@
         })
     })
 
+    var winHeight = $(window).height();
+    $(window).resize(function () {
+        var thisHeight = $(this).height();
+        var keyboardHeight = thisHeight - winHeight;
+        $(".search").css({ 'bottom': keyboardHeight + 'px' });
+    });
+
+    var winHeight = $(window).height(); //获取当前页面高度  
+    $("body").height(winHeight);
+
 </script>
