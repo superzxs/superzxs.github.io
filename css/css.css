@@ -19,7 +19,7 @@ h1{
 
 #search{  
     display: inline-block;
-    width: 1000px;
+    width: 800px;
     position: absolute;
     left: 50%;
     top:40%;
@@ -39,6 +39,7 @@ h1{
     margin: 0 auto;
     border-radius: 24px;
     text-indent:10px;   
+    font-size: 50px;
 }
 
 #search button{
